@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+}
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
   html,
   body {
     background-color: #ffffff;
